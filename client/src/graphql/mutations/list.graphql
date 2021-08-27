@@ -1,0 +1,16 @@
+mutation CreateNewListMutation($createNewListInput: ListInput) {
+  createNewList(input: $createNewListInput) {
+    _id
+    listTitle
+    words
+    data
+  }
+}
+
+mutation UpdateListMutation($updateListInput: ListUpdateInput) {
+  updateList(input: $updateListInput) {
+    _id
+    listTitle
+    words
+  }
+}

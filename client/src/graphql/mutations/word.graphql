@@ -1,0 +1,7 @@
+mutation CreateNewWordMutation($createNewWordInput: WordInput) {
+  createNewWord(input: $createNewWordInput) {
+    _id
+    word_en
+    word_ua
+  }
+}

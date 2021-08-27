@@ -1,0 +1,7 @@
+query getWordById($getWordByIdId: ID) {
+  getWordById(_id: $getWordByIdId) {
+    _id
+    word_en
+    word_ua
+  }
+}

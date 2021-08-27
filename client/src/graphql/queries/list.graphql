@@ -1,0 +1,30 @@
+query getAllList {
+  getAllList {
+    listTitle
+    words
+    data
+    _id
+  }
+}
+
+query getListById($getListByIdId: ID) {
+  getListById(_id: $getListByIdId) {
+    _id
+    listTitle
+    words {
+      _id
+      word_en
+      word_ua
+    }
+    data
+  }
+}
+
+query takeFewList($takeFewListNumber: Int) {
+  takeFewList(number: $takeFewListNumber) {
+    _id
+    listTitle
+    words
+    data
+  }
+}
